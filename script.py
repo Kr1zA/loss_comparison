@@ -232,8 +232,8 @@ data.insert(len(data.columns), f"{CRITERION}_scaled", scaler.transform(data))
 data_lagged_and_futured = create_lags_and_future(data, LAGS, FUTURE)
 
 futures = [CRITERION]
-for fut in range(2, FUTURE + 1, 1):
-    futures.append(f"{CRITERION}_fut_{fut}")
+for fu in range(2, FUTURE + 1, 1):
+    futures.append(f"{CRITERION}_fut_{fu}")
 
 
 
